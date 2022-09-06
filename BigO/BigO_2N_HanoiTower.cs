@@ -1,8 +1,8 @@
 ﻿namespace BigONotation.BigO;
 
-public static class BigO_2N_HanoiTower
+public class BigO_2N_HanoiTower
 {
-    public static void TowerOfHanoi(int n, char from_rod, char to_rod, char aux_rod)
+    public void TowerOfHanoi(int n, char from_rod, char to_rod, char aux_rod)
     {
         if (n == 0)
             return;

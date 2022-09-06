@@ -1,8 +1,8 @@
 ﻿namespace BigONotation.BigO;
 
-public static class BigO_Log_N_BinarySearch
+public class BigO_Log_N_BinarySearch
 {
-    public static int BinarySearch(List<int> numberElements, int valuesToBeSearched)
+    public int BinarySearch(List<int> numberElements, int valuesToBeSearched)
     {
         if (numberElements == null)
             throw new ArgumentNullException(nameof(numberElements));

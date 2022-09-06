@@ -3,12 +3,13 @@ using System.Text;
 
 namespace BigONotation.BigO;
 
-public static class BigO_NLogN_MergeSort
+public class BigO_NLogN_MergeSort
 {
     // O(n log n)
-    public static void OrderingMergeSort()
+    public void OrderingMergeSort()
     {
-        var numbersMergeSort = MergeSort(BigOBenchmarks.UnorderedNumbers.ToArray<int>(), 0, BigOBenchmarks.UnorderedNumbers.Count -1).ToList<int>();
+        var common = new Common();
+        var numbersMergeSort = MergeSort(common.UnorderedNumbers.ToArray<int>(), 0, common.UnorderedNumbers.Count -1).ToList<int>();
 
         var sbMergeSort = new StringBuilder();
 
@@ -20,7 +21,7 @@ public static class BigO_NLogN_MergeSort
         Console.WriteLine(sbMergeSort.ToString());  
     }
 
-    private static int[] MergeSort(int[] inputItems, int leftBound, int rightBound)
+    private int[] MergeSort(int[] inputItems, int leftBound, int rightBound)
     {
         if (leftBound > rightBound)
             return inputItems;

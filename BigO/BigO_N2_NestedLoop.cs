@@ -2,9 +2,9 @@
 
 namespace BigONotation.BigO;
 
-public static class BigO_N2_NestedLoop
+public class BigO_N2_NestedLoop
 {
-    public static void NestedLoop()
+    public void NestedLoop()
     {
         var n2Array = new int[20000];
 
