@@ -23,7 +23,7 @@ public class BigO_NLogN_MergeSort
 
     private int[] MergeSort(int[] inputItems, int leftBound, int rightBound)
     {
-        if (leftBound > rightBound)
+        if (leftBound >= rightBound)
             return inputItems;
 
         int middle = (leftBound + rightBound) /2;

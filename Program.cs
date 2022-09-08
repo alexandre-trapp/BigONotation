@@ -1,4 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 using BigONotation.Benchmark;
+using BigONotation.BigO;
 
-BenchmarkRunner.Run<BigOBenchmarks>();
+new BigO_NLogN_MergeSort().OrderingMergeSort();
+//BenchmarkRunner.Run<BigOBenchmarks>();
